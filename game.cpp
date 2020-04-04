@@ -5,8 +5,19 @@
 #include "game.h"
 
 void game::start() {
-    out.open("results.out");
     int input;
+    std::cout << "Type 1 if ypu have a second player,\nType 0 if you need a bot:\n";
+    std::cin >> input;
+    while (input < 0 || input > 1) {
+        std::cout << "Wring format :( try again.\nType 1 if ypu have a second player,\nType 0 if you need a bot:\n";
+        std::cin >> input;
+    }
+    if (input == 0) {
+        player2.set_bot();
+    }
+
+    out.open("results.out");
+
     std::cout << "Send me the size of the board (send 0 or less if you want to stop):\n";
     std::cin >> input;
     while (input > 0) {

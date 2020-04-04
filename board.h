@@ -19,6 +19,7 @@ public:
     bool set(int x, int y, char character);
     bool check(char character);
     void show();
+    std::vector<std::pair<int, int>> free_cells();
 };
 
 

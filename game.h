@@ -16,7 +16,6 @@ private:
     std::ofstream out;
 public:
     game() : player1('x'), player2('o') {};
-    game(int size) : player1('x'), player2('o') {};
     void start();
 };
 

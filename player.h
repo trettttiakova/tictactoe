@@ -11,10 +11,12 @@
 class player {
 private:
     char character;
+    bool bot = false;
 public:
     player(char character);
     void move(board * brd);
     char get_character();
+    void set_bot();
 };
 
 

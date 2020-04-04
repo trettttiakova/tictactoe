@@ -98,3 +98,15 @@ void board::show() {
         std::cout << "|\n";
     }
 }
+
+std::vector<std::pair<int, int>> board::free_cells() {
+    std::vector<std::pair<int, int>> cells;
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (brd[i][j] == '.') {
+                cells.emplace_back(i, j);
+            }
+        }
+    }
+    return cells;
+}

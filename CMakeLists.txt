@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(tictactoe main.cpp
         board.cpp board.h
         player.cpp player.h
-        game.cpp game.h)
+        game.cpp game.h
+        )
