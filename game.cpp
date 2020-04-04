@@ -6,7 +6,7 @@
 
 void game::start() {
     int input;
-    std::cout << "Type 1 if ypu have a second player,\nType 0 if you need a bot:\n";
+    std::cout << "Type 1 if you have a second player,\nType 0 if you need a bot:\n";
     std::cin >> input;
     while (input < 0 || input > 1) {
         std::cout << "Wring format :( try again.\nType 1 if ypu have a second player,\nType 0 if you need a bot:\n";
